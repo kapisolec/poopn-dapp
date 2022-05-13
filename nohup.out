@@ -182,3 +182,227 @@ cached modules 1.49 MiB (javascript) 67.6 KiB (asset) [cached] 106 modules
 runtime modules 28.6 KiB 14 modules
 ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[1].oneOf[7].use[3]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[4]!./src/App.scss 3.16 KiB [built] [code generated]
 webpack 5.72.0 compiled successfully in 276 ms
+
+> tsuki-frontend@0.1.0 start
+> react-scripts start
+
+(node:105840) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:105840) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+Starting the development server...
+
+Compiled successfully!
+
+You can now view tsuki-frontend in the browser.
+
+  http://localhost:3000
+
+Note that the development build is not optimized.
+To create a production build, use npm run build.
+
+assets by path static/ 9.12 MiB
+  assets by path static/media/*.svg 13 KiB
+    asset static/media/Uniswap_Logo.b9bc1ca935487b87454ae700f1f97012.svg 7.74 KiB [emitted] (auxiliary name: main)
+    asset static/media/dextools.2b209639ed157922b71836cde5064cae.svg 4.21 KiB [emitted] (auxiliary name: main)
+    asset static/media/wallet.55277efd6ef286a412ec0545d3e50ba7.svg 1.01 KiB [emitted] (auxiliary name: main)
+  assets by info 2.65 MiB [immutable]
+    asset static/media/tsuki-bg.fd46045bda42a1752ce5.png 2.61 MiB [emitted] [immutable] [from: public/tsuki-bg.png] (auxiliary name: main)
+    asset static/media/RomajiMincho.bc769a931a7982bbc199.otf 36.7 KiB [emitted] [immutable] [from: src/fonts/RomajiMincho.otf] (auxiliary name: main)
+  asset static/js/bundle.js 6.46 MiB [emitted] (name: main) 1 related asset
+asset index.html 1.89 KiB [emitted]
+asset asset-manifest.json 658 bytes [emitted]
+cached modules 5.96 MiB (javascript) 2.65 MiB (asset) [cached] 315 modules
+runtime modules 28.6 KiB 15 modules
+webpack 5.72.0 compiled successfully in 2732 ms
+Compiling...
+Compiled with warnings.
+
+src/Components/App/App.js
+  Line 29:6:  React Hook useEffect has a missing dependency: 'checkIfConnected'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+assets by status 2.66 MiB [cached] 5 assets
+assets by status 6.47 MiB [emitted]
+  assets by chunk 6.47 MiB (name: main)
+    asset static/js/bundle.js 6.46 MiB [emitted] (name: main) 1 related asset
+    asset main.5df706a046169711a314.hot-update.js 7.77 KiB [emitted] [immutable] [hmr] (name: main) 1 related asset
+  assets by path *.json 811 bytes
+    asset asset-manifest.json 783 bytes [emitted]
+    asset main.5df706a046169711a314.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+  asset index.html 1.89 KiB [emitted]
+Entrypoint main 6.47 MiB (8.73 MiB) = static/js/bundle.js 6.46 MiB main.5df706a046169711a314.hot-update.js 7.77 KiB 7 auxiliary assets
+cached modules 5.96 MiB (javascript) 2.65 MiB (asset) [cached] 314 modules
+runtime modules 28.6 KiB 15 modules
+./src/Components/App/App.js 4.61 KiB [built] [code generated]
+
+WARNING in src/Components/App/App.js
+  Line 29:6:  React Hook useEffect has a missing dependency: 'checkIfConnected'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+webpack 5.72.0 compiled with 1 warning in 3859 ms
+Compiling...
+Compiled with warnings.
+
+src/Components/App/App.js
+  Line 29:6:  React Hook useEffect has a missing dependency: 'checkIfConnected'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src/Components/Tasks/Task.js
+  Line 2:8:    'axios' is defined but never used                                                                                                                                                      no-unused-vars
+  Line 60:11:  'name' is assigned a value but never used                                                                                                                                              no-unused-vars
+  Line 60:39:  'action' is assigned a value but never used                                                                                                                                            no-unused-vars
+  Line 63:9:   'renderHtmlFrame' is assigned a value but never used                                                                                                                                   no-unused-vars
+  Line 81:5:   Using target="_blank" without rel="noreferrer" (which implies rel="noopener") is a security risk in older browsers: see https://mathiasbynens.github.io/rel-noopener/#recommendations  react/jsx-no-target-blank
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+assets by status 2.66 MiB [cached] 5 assets
+assets by status 6.47 MiB [emitted]
+  assets by chunk 6.46 MiB (name: main)
+    asset static/js/bundle.js 6.46 MiB [emitted] (name: main) 1 related asset
+    asset main.26f9789ace916f3d475f.hot-update.js 7.32 KiB [emitted] [immutable] [hmr] (name: main) 1 related asset
+  assets by path *.json 811 bytes
+    asset asset-manifest.json 783 bytes [emitted]
+    asset main.26f9789ace916f3d475f.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+  asset index.html 1.89 KiB [emitted]
+Entrypoint main 6.46 MiB (8.74 MiB) = static/js/bundle.js 6.46 MiB main.26f9789ace916f3d475f.hot-update.js 7.32 KiB 7 auxiliary assets
+cached modules 5.96 MiB (javascript) 2.65 MiB (asset) [cached] 314 modules
+runtime modules 28.6 KiB 15 modules
+./src/Components/Tasks/Task.js 4.69 KiB [built] [code generated]
+
+WARNING in src/Components/App/App.js
+  Line 29:6:  React Hook useEffect has a missing dependency: 'checkIfConnected'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src/Components/Tasks/Task.js
+  Line 2:8:    'axios' is defined but never used                                                                                                                                                      no-unused-vars
+  Line 60:11:  'name' is assigned a value but never used                                                                                                                                              no-unused-vars
+  Line 60:39:  'action' is assigned a value but never used                                                                                                                                            no-unused-vars
+  Line 63:9:   'renderHtmlFrame' is assigned a value but never used                                                                                                                                   no-unused-vars
+  Line 81:5:   Using target="_blank" without rel="noreferrer" (which implies rel="noopener") is a security risk in older browsers: see https://mathiasbynens.github.io/rel-noopener/#recommendations  react/jsx-no-target-blank
+
+webpack 5.72.0 compiled with 1 warning in 1181 ms
+
+> tsuki-frontend@0.1.0 start
+> react-scripts start
+
+(node:253113) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:253113) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+Starting the development server...
+
+Compiled successfully!
+
+You can now view tsuki-frontend in the browser.
+
+  http://localhost:3000
+
+Note that the development build is not optimized.
+To create a production build, use npm run build.
+
+assets by path static/ 10.2 MiB
+  assets by path static/media/*.svg 15.3 KiB
+    asset static/media/Uniswap_Logo.b9bc1ca935487b87454ae700f1f97012.svg 7.74 KiB [emitted] (auxiliary name: main)
+    asset static/media/dextools.2b209639ed157922b71836cde5064cae.svg 4.21 KiB [emitted] (auxiliary name: main)
+    asset static/media/dexscreener.e946fa742b2196ecd367d8049dbe96d2.svg 2.37 KiB [emitted] (auxiliary name: main)
+    asset static/media/wallet.55277efd6ef286a412ec0545d3e50ba7.svg 1.01 KiB [emitted] (auxiliary name: main)
+  assets by info 2.9 MiB [immutable]
+    asset static/media/tsuki-bg.fd46045bda42a1752ce5.png 2.61 MiB [emitted] [immutable] [from: public/tsuki-bg.png] (auxiliary name: main)
+    asset static/media/HakioFreeTrial.8bf8f00b35dfd845d0b1.otf 297 KiB [emitted] [immutable] [from: src/fonts/HakioFreeTrial.otf] (auxiliary name: main)
+  asset static/js/bundle.js 7.28 MiB [emitted] (name: main) 1 related asset
+asset index.html 1.89 KiB [emitted]
+asset asset-manifest.json 764 bytes [emitted]
+cached modules 6.68 MiB (javascript) 2.9 MiB (asset) [cached] 321 modules
+runtime modules 28.6 KiB 15 modules
+webpack 5.72.0 compiled successfully in 2309 ms
+Compiling...
+Compiled successfully!
+assets by status 2.92 MiB [cached] 6 assets
+assets by status 7.29 MiB [emitted]
+  assets by chunk 7.29 MiB (name: main)
+    asset static/js/bundle.js 7.28 MiB [emitted] (name: main) 1 related asset
+    asset main.4850aeb1069c73407441.hot-update.js 9.84 KiB [emitted] [immutable] [hmr] (name: main) 1 related asset
+  assets by path *.json 917 bytes
+    asset asset-manifest.json 889 bytes [emitted]
+    asset main.4850aeb1069c73407441.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+  asset index.html 1.89 KiB [emitted]
+Entrypoint main 7.29 MiB (9.72 MiB) = static/js/bundle.js 7.28 MiB main.4850aeb1069c73407441.hot-update.js 9.84 KiB 8 auxiliary assets
+cached modules 6.67 MiB (javascript) 2.9 MiB (asset) [cached] 320 modules
+runtime modules 28.6 KiB 15 modules
+./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[1].oneOf[7].use[3]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[4]!./src/Components/HtmlFrame/HtmlFrame.scss 6.92 KiB [built] [code generated]
+webpack 5.72.0 compiled successfully in 1994 ms
+Compiling...
+Compiled successfully!
+assets by status 2.92 MiB [cached] 6 assets
+assets by status 7.29 MiB [emitted]
+  assets by chunk 7.29 MiB (name: main)
+    asset static/js/bundle.js 7.28 MiB [emitted] (name: main) 1 related asset
+    asset main.5caaedde5cecf8a217ad.hot-update.js 9.84 KiB [emitted] [immutable] [hmr] (name: main) 1 related asset
+  assets by path *.json 917 bytes
+    asset asset-manifest.json 889 bytes [emitted]
+    asset main.5caaedde5cecf8a217ad.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+  asset index.html 1.89 KiB [emitted]
+Entrypoint main 7.29 MiB (9.72 MiB) = static/js/bundle.js 7.28 MiB main.5caaedde5cecf8a217ad.hot-update.js 9.84 KiB 8 auxiliary assets
+cached modules 6.67 MiB (javascript) 2.9 MiB (asset) [cached] 320 modules
+runtime modules 28.6 KiB 15 modules
+./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[1].oneOf[7].use[3]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[4]!./src/Components/HtmlFrame/HtmlFrame.scss 6.92 KiB [built] [code generated]
+webpack 5.72.0 compiled successfully in 629 ms
+Compiling...
+Compiled successfully!
+assets by status 2.92 MiB [cached] 6 assets
+assets by status 7.29 MiB [emitted]
+  assets by chunk 7.28 MiB (name: main)
+    asset static/js/bundle.js 7.28 MiB [emitted] (name: main) 1 related asset
+    asset main.3238a359004b30fd2f8a.hot-update.js 365 bytes [emitted] [immutable] [hmr] (name: main) 1 related asset
+  assets by path *.json 917 bytes
+    asset asset-manifest.json 889 bytes [emitted]
+    asset main.3238a359004b30fd2f8a.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+  asset index.html 1.89 KiB [emitted]
+Entrypoint main 7.28 MiB (9.72 MiB) = static/js/bundle.js 7.28 MiB main.3238a359004b30fd2f8a.hot-update.js 365 bytes 8 auxiliary assets
+cached modules 6.68 MiB (javascript) 2.9 MiB (asset) [cached] 321 modules
+runtime modules 28.6 KiB 15 modules
+webpack 5.72.0 compiled successfully in 926 ms
+
+> tsuki-frontend@0.1.0 start
+> react-scripts start
+
+(node:96557) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:96557) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+Starting the development server...
+
+Compiled successfully!
+
+You can now view tsuki-frontend in the browser.
+
+  http://localhost:3000
+
+Note that the development build is not optimized.
+To create a production build, use npm run build.
+
+assets by path static/ 10.3 MiB
+  assets by path static/media/*.svg 15.3 KiB
+    asset static/media/Uniswap_Logo.b9bc1ca935487b87454ae700f1f97012.svg 7.74 KiB [emitted] (auxiliary name: main)
+    asset static/media/dextools.2b209639ed157922b71836cde5064cae.svg 4.21 KiB [emitted] (auxiliary name: main)
+    asset static/media/dexscreener.e946fa742b2196ecd367d8049dbe96d2.svg 2.37 KiB [emitted] (auxiliary name: main)
+    asset static/media/wallet.55277efd6ef286a412ec0545d3e50ba7.svg 1.01 KiB [emitted] (auxiliary name: main)
+  assets by info 2.9 MiB [immutable]
+    asset static/media/tsuki-bg.fd46045bda42a1752ce5.png 2.61 MiB [emitted] [immutable] [from: public/tsuki-bg.png] (auxiliary name: main)
+    asset static/media/HakioFreeTrial.8bf8f00b35dfd845d0b1.otf 297 KiB [emitted] [immutable] [from: src/fonts/HakioFreeTrial.otf] (auxiliary name: main)
+  asset static/js/bundle.js 7.34 MiB [emitted] (name: main) 1 related asset
+asset index.html 1.73 KiB [emitted]
+asset asset-manifest.json 764 bytes [emitted]
+cached modules 6.74 MiB (javascript) 2.9 MiB (asset) [cached] 323 modules
+runtime modules 28.6 KiB 15 modules
+webpack 5.72.0 compiled successfully in 2857 ms
+ForbiddenError: Forbidden
+    at /root/APPS/tsukidao/tsuki-frontend/node_modules/serve-index/index.js:125:19
+    at middleware (/root/APPS/tsukidao/tsuki-frontend/node_modules/webpack-dev-server/lib/Server.js:2355:18)
+    at Layer.handle [as handle_request] (/root/APPS/tsukidao/tsuki-frontend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/root/APPS/tsukidao/tsuki-frontend/node_modules/express/lib/router/index.js:323:13)
+    at /root/APPS/tsukidao/tsuki-frontend/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/root/APPS/tsukidao/tsuki-frontend/node_modules/express/lib/router/index.js:341:12)
+    at next (/root/APPS/tsukidao/tsuki-frontend/node_modules/express/lib/router/index.js:275:10)
+    at SendStream.error (/root/APPS/tsukidao/tsuki-frontend/node_modules/serve-static/index.js:121:7)
+    at SendStream.emit (node:events:526:28)
+    at SendStream.error (/root/APPS/tsukidao/tsuki-frontend/node_modules/send/index.js:270:17)

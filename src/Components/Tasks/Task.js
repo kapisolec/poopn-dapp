@@ -1,9 +1,9 @@
 import { FaShareSquare } from "react-icons/fa";
+import { MdOutlineClose, MdCheck } from "react-icons/md";
 import axios from "axios";
 import "./Task.scss";
 import { Portal } from "react-portal";
-import { useRef, useState } from "react";
-import HtmlFrame from "./HtmlFrame";
+import { useRef, useState, useReducer } from "react";
 
 const tilt = (el) => {
   function handleMove(e) {
@@ -56,47 +56,73 @@ const tilt = (el) => {
 };
 
 function Task(props) {
-  const [showFrame, setshowFrame] = useState(false);
-  const { name, description, website, action } = props;
+  const { name, description, website, action, done, wallet, getDoneTasks } =
+    props;
   const taskContainer = useRef(null);
-  console.log(showFrame);
 
-  const renderHtmlFrame = () => {
-    if (showFrame) {
+  const taskDone = async () => {
+    if (done) {
+      console.log("task already done");
+    } else {
+      console.log("should be done");
+      const response = await axios.post(
+        "http://195.201.6.251:3001/registerTask",
+        {
+          wallet: wallet,
+          task: name,
+        }
+      );
+      console.log(response);
+      if (response.data == true) {
+        getDoneTasks();
+      }
+    }
+  };
+
+  const checkIfTaskDone = () => {
+    if (done === true) {
       return (
-        <Portal node={document && document.getElementById("root")}>
-          <HtmlFrame
-            website={website}
-            setshowFrame={setshowFrame}
-            showFrame={showFrame}
-          />
-        </Portal>
+        <MdCheck
+          className="task-icon"
+          size="25px"
+          color="green"
+          stroke="#000"
+        />
+      );
+    } else {
+      return (
+        <MdOutlineClose
+          className="task-icon"
+          size="25px"
+          color="red"
+          stroke="#000"
+        />
       );
     }
-    return null;
   };
 
   // useEffect(() => tilt(taskContainer.current), []);
   // // tilt(taskContainer.current);
   return (
-    <div
+    <a
       ref={taskContainer}
       className="task-container"
       onMouseEnter={() => tilt(taskContainer.current)}
-      onClick={() => setshowFrame(true)}
+      href={website}
+      target="_blank"
+      onClick={taskDone}
     >
       <div className="task-description">{description}</div>
-      <div>
+      <div className="task-icons">
+        {checkIfTaskDone()}
         <FaShareSquare
           className="task-icon"
           size="25px"
-          color="#000"
-          opacity={1}
+          color="white"
           stroke="#000"
         />
       </div>
-      {renderHtmlFrame()}
-    </div>
+    </a>
   );
 }
 

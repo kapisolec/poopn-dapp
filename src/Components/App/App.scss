@@ -28,7 +28,7 @@
   transition: all 0.3s cubic-bezier(0.41, 0.79, 0, 0.96);
 
   &:hover {
-    fill: rgb(180, 0, 69);
+    fill: #df7620;
     filter: unset;
   }
 }
@@ -41,7 +41,7 @@
   fill: #fff;
 
   &:hover {
-    fill: rgb(180, 0, 69);
+    fill: #df7620;
     filter: unset;
   }
 }
@@ -54,47 +54,17 @@
   fill: #fff;
 
   &:hover {
-    fill: rgb(180, 0, 69);
+    fill: #df7620;
     filter: unset;
   }
 }
 
 .app-content {
-  backdrop-filter: blur(4px);
-  background-color: #ffb0ce4b;
+  backdrop-filter: blur(5px);
+  background-color: rgb(200 142 177 / 59%);
   z-index: 1;
   max-width: 800px;
   border-radius: 15px;
-}
-
-.svg-wrapper {
-  cursor: pointer;
-  position: relative;
-
-  .moon-svg {
-    width: 42px;
-    height: 42px;
-  }
-
-  .moon-satelite {
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: cubic-bezier(0.5, 0.8, 0.5, 0.2);
-    position: absolute;
-    left: 0;
-    width: 42px;
-    height: 42px;
-    animation-name: spin;
-  }
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
 }
 
 .app-cherry {
@@ -124,13 +94,11 @@
 }
 
 .app-content-main_container {
-  filter: brightness(0.9);
   box-shadow: 3px 3px 16px -7px rgba(90, 80, 66, 1);
   width: 500px;
   height: 600px;
   max-height: 80vh;
   border-radius: 15px;
-  padding: 10px;
   border: 1px solid #ffb0ce65;
 
   .content-header {
@@ -146,5 +114,140 @@
     flex-direction: column;
     align-items: center;
     height: 90%;
+  }
+}
+
+.video-container {
+  position: absolute;
+  z-index: 1000000000000;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  animation-delay: 8s;
+  animation: fade-out 1s ease-in-out 8s forwards;
+  opacity: 100%;
+  visibility: visible;
+
+  video {
+    object-fit: cover;
+  }
+
+  @keyframes fade-out {
+    from {
+      opacity: 100%;
+    }
+    to {
+      opacity: 0%;
+      visibility: hidden;
+    }
+  }
+}
+
+.app-info {
+  margin-right: auto;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.41, 0.79, 0, 0.96);
+  fill: #fff;
+  margin-left: -20px;
+  &:hover {
+    fill: #df7620;
+    filter: unset;
+  }
+}
+
+.app-content-header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 3px 8px;
+  background-color: rgb(174 118 153 / 80%);
+  border-radius: 15px 15px 0 0;
+}
+
+.app-dexscreener {
+  width: 50px;
+  max-height: 45px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.41, 0.79, 0, 0.96);
+  fill: #fff;
+
+  &:hover {
+    fill: #df7620;
+  }
+}
+
+.app-leaderboard {
+  width: 50px;
+  max-height: 45px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.41, 0.79, 0, 0.96);
+  fill: #fff;
+
+  &:hover {
+    fill: #df7620;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  #root {
+    max-height: 100vh;
+  }
+
+  .app-content-main_container {
+    width: 100%;
+  }
+
+  .app-content,
+  .frame-container {
+    width: 95% !important;
+    height: 90% !important;
+    resize: unset !important;
+    min-width: unset !important;
+  }
+
+  .frame-grid {
+    grid-template-columns: 100px 100px 100px !important;
+    gap: 5px !important;
+  }
+
+  .frame-grid-el {
+    word-break: break-word !important;
+    max-height: unset !important;
+    font-size: 16px !important;
+  }
+
+  .frame-draggable {
+    display: none;
+  }
+
+  .app {
+    justify-content: unset;
+    height: 100%;
+  }
+
+  .app-header {
+    position: sticky;
+    top: 100%;
+    width: 92%;
+    z-index: 1000000;
+  }
+}
+
+.frame-claim_btn {
+  background-color: rgba(215, 250, 255, 0.835294118);
+  display: flex;
+  align-items: center;
+  padding: 3px 10px;
+  margin-left: 5px;
+  border-radius: 10px;
+  margin-right: -133px;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &:active {
+    transform: scale(0.9);
   }
 }

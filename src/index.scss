@@ -1,14 +1,15 @@
 body {
   flex: 1;
   margin: 0;
-  font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+  font-family: CatCafe, "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
     "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: url("../public/tsuki-bg.png") no-repeat center scroll;
+  background: url("../public/bg-desktop.png") no-repeat center scroll;
   background-size: cover;
   position: relative;
   overflow-y: hidden;
+  letter-spacing: 1px;
 }
 
 code {
@@ -22,9 +23,16 @@ code {
 }
 
 @font-face {
-  font-family: "RomajiMincho";
-  src: local("RomajiMincho"), url(./fonts/RomajiMincho.otf) format("opentype");
+  font-family: "CatCafe";
+  src: local("CatCafe"), url(./fonts/CatCafe.ttf) format("opentype");
 }
 
 $mainColor: #efe9db;
 $accentColor: #93063e;
+
+@media only screen and (max-width: 480px) {
+  body {
+    background: url("../public/bg-mobile.png") no-repeat center scroll;
+    background-size: cover;
+  }
+}
