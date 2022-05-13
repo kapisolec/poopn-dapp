@@ -1,15 +1,13 @@
+/* eslint-disable */
 import { WalletDispatcher } from "../../Scripts/WalletDispatcher";
 import { FaInfo } from "react-icons/fa";
 // import { connector } from "../../Scripts/trustWallet";
-import { AiOutlineDrag } from "react-icons/ai";
 import { MdLeaderboard } from "react-icons/md";
-import Draggable from "react-draggable";
 import { ReactComponent as Wallet } from "../../svgs/wallet.svg";
 import { ReactComponent as UniswapLogo } from "../../svgs/Uniswap_Logo.svg";
 import { ReactComponent as DextoolsIcon } from "../../svgs/dextools.svg";
 import { ReactComponent as DexscreenerIcon } from "../../svgs/dexscreener.svg";
-import { useEffect, useState, useRef } from "react";
-import Tasks from "../Tasks/Tasks";
+import { useEffect, useState } from "react";
 import "./App.scss";
 import HtmlFrame from "../HtmlFrame/HtmlFrame";
 import Dexscreener from "../HtmlFrame/Dexscreener";
@@ -26,7 +24,6 @@ function App() {
   const [showUniswap, setShowUniswap] = useState(false);
   const [showDex, setShowDex] = useState(false);
   const [showLeaderboard, setShowLeaderboard] = useState(false);
-  const nodeRef = useRef(null);
 
   const checkIfConnected = async () => {
     if (connected) return;
