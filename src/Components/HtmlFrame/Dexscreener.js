@@ -34,7 +34,7 @@ function HtmlFrame(props) {
           </header>
           <div className="frame-content">
             <Iframe
-              url="https://dexscreener.com/ethereum/0x11b815efb8f581194ae79006d24e0d814b7697f6"
+              url="https://dexscreener.com/bsc/0x321fd4ef6b02b49f86d3f76a132b65fff73c7e96"
               sandbox=""
             />
           </div>

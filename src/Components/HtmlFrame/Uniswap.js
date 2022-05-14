@@ -28,12 +28,15 @@ function HtmlFrame(props) {
       >
         <div ref={nodeRef} className="frame-container">
           <header className="frame-header">
-            <div className="frame-frameInfo">Uniswap</div>
+            <div className="frame-frameInfo">Pancakeswap</div>
             <AiOutlineDrag className="frame-draggable" size="35px" />
             <MdClose className="frame-exit" size="35px" onClick={closeFrame} />
           </header>
           <div className="frame-content">
-            <Iframe url="https://app.uniswap.org/#/swap" sandbox="" />
+            <Iframe
+              url="https://pancakeswap.finance/swap?outputCurrency=0x321Fd4eF6B02b49F86d3F76A132B65ffF73c7E96"
+              sandbox=""
+            />
           </div>
         </div>
       </Draggable>

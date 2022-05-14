@@ -4,7 +4,7 @@ import { FaInfo } from "react-icons/fa";
 // import { connector } from "../../Scripts/trustWallet";
 import { MdLeaderboard } from "react-icons/md";
 import { ReactComponent as Wallet } from "../../svgs/wallet.svg";
-import { ReactComponent as UniswapLogo } from "../../svgs/Uniswap_Logo.svg";
+// import { ReactComponent as UniswapLogo } from "../../svgs/Uniswap_Logo.html";
 import { ReactComponent as DextoolsIcon } from "../../svgs/dextools.svg";
 import { ReactComponent as DexscreenerIcon } from "../../svgs/dexscreener.svg";
 import { useEffect, useState } from "react";
@@ -103,14 +103,15 @@ function App() {
           color="white"
           onClick={() => setShowFrame(true)}
         />
-        <DextoolsIcon className="app-dextools" />
+        <DextoolsIcon
+          className="app-dextools"
+          onClick={() => setShowUniswap(true)}
+        />
+
         <DexscreenerIcon
+          src="https://poocoin.app/images/logo/poocoin512.png"
           className="app-dexscreener"
           onClick={() => setShowDex(true)}
-        />
-        <UniswapLogo
-          className="app-uniswap"
-          onClick={() => setShowUniswap(true)}
         />
         <Wallet
           className="app-wallet"

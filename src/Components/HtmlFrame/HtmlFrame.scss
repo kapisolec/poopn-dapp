@@ -227,3 +227,39 @@
 ::-webkit-scrollbar-track-piece:start {
   background: transparent;
 }
+
+.task-container {
+  width: 90%;
+  min-height: 40px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(181, 118, 65, 0.76);
+  padding: 10px;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: 3px 3px 16px -7px rgba(90, 80, 66, 1);
+  text-decoration: none;
+  color: black;
+  transition: all 0.2s;
+  color: white;
+
+  &:hover {
+    .task-icon {
+      fill: rgb(206, 81, 123);
+    }
+  }
+}
+
+.task-icon {
+  transition: all 0.15s ease-out;
+}
+
+.task-icons {
+  display: flex;
+  gap: 5px;
+}
+
+.task-description {
+  width: 90%;
+  line-height: 20px;
+}

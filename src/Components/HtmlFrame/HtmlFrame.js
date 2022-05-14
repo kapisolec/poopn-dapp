@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { useEffect, useRef, useState } from "react";
 import Draggable from "react-draggable"; // The default
 import { Portal } from "react-portal";
@@ -10,8 +11,8 @@ import axios from "axios";
 function HtmlFrame(props) {
   const { setshowFrame, wallet = "" } = props;
   const [tokenData, setTokenData] = useState({});
-  const token = "0x517AB044bda9629E785657DbbCae95C40C8f452C";
-  const nativeToken = "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2";
+  const token = "0x321fd4ef6b02b49f86d3f76a132b65fff73c7e96";
+  const nativeToken = "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c";
 
   const nodeRef = useRef(null);
   const dollarUS = Intl.NumberFormat("en-US", {
@@ -123,13 +124,13 @@ function HtmlFrame(props) {
               <div className="frame-grid-el contract">
                 <span className="title">Contract</span>
                 <span className="content">
-                  0x517AB044bda9629E785657DbbCae95C40C8f452C
+                  0x321fd4ef6b02b49f86d3f76a132b65fff73c7e96
                 </span>
               </div>
               <div className="frame-grid-el pair">
                 <span className="title">Pair</span>
                 <span className="content">
-                  0x1F4e90E91e4C8b6915464EbA84F662d80c0805c9
+                  0x0351367d3868739457fd96ea6ce3e2810190308a
                 </span>
               </div>
               <div className="frame-grid-el portfolio">
@@ -141,10 +142,6 @@ function HtmlFrame(props) {
               <div className="frame-grid-el holdings">
                 <span className="title">You have:</span>
                 <span className="content">$300 TSUKI</span>
-              </div>
-              <div className="frame-grid-el tasks">
-                <span className="title">Done tasks:</span>
-                <span className="content">4/4</span>
               </div>
             </div>
           </div>
