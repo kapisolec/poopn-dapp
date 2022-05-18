@@ -23,7 +23,7 @@ function Leaderboard(props) {
     const fetchData = async () => {
       try {
         const tradingVolume = await axios.get(
-          "http://195.201.6.251:3001/get-leaderboard"
+          "https://cockper.site/get-leaderboard"
         );
         console.log(tradingVolume.data);
         setLeaderboard([...tradingVolume.data]);

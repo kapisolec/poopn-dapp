@@ -26,17 +26,14 @@ function HtmlFrame(props) {
     const fetchData = async () => {
       console.log(wallet);
       try {
-        const tradingVolume = await axios.post(
-          "http://cockper.space:3001/rpc",
-          {
-            method: "getTradingVolume",
-            params: {
-              token: token,
-              nativeToken,
-            },
-          }
-        );
-        const tokenInfo = await axios.post("http://cockper.space:3001/rpc", {
+        const tradingVolume = await axios.post("https://cockper.site/rpc", {
+          method: "getTradingVolume",
+          params: {
+            token: token,
+            nativeToken,
+          },
+        });
+        const tokenInfo = await axios.post("https://cockper.site/rpc", {
           method: "getTokenInfo",
           params: {
             token: token,
@@ -46,7 +43,7 @@ function HtmlFrame(props) {
         });
 
         const userInfo = await axios.post(
-          "http://cockper.space:3001/get-user-info",
+          "https://cockper.site/get-user-info",
           {
             token: token,
             wallet: wallet,
